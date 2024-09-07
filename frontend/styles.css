@@ -1,67 +1,140 @@
-/* styles.css */
-
+/* Styles globaux */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Police de caractères globale */
+    margin: 0; /* Suppression des marges par défaut */
+    padding: 0; /* Suppression des espacements par défaut */
+    background-color: #f4f4f4; /* Couleur de fond de la page */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+    background-color: #333; /* Couleur de fond de l'en-tête */
+    color: #fff; /* Couleur du texte dans l'en-tête */
+    padding: 10px 20px; /* Espacement intérieur de l'en-tête */
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+header nav ul {
+    list-style: none; /* Suppression des puces de la liste */
+    margin: 0; /* Suppression de la marge par défaut */
+    padding: 0; /* Suppression du padding par défaut */
 }
 
-nav ul li {
-    margin-right: 1rem;
+header nav ul li {
+    display: inline; /* Affichage des éléments de la liste en ligne */
+    margin-right: 15px; /* Espacement à droite des éléments de la liste */
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+header nav ul li a {
+    color: #fff; /* Couleur des liens dans l'en-tête */
+    text-decoration: none; /* Suppression du soulignement des liens */
+    font-weight: bold; /* Mise en gras des liens */
 }
 
 main {
-    padding: 1rem;
+    padding: 20px; /* Espacement intérieur du conteneur principal */
+    max-width: 1200px; /* Largeur maximale du conteneur principal */
+    margin: 0 auto; /* Centrage horizontal du conteneur principal */
+}
+
+h1 {
+    text-align: center; /* Alignement du titre au centre */
+    color: #333; /* Couleur du texte du titre */
+}
+
+/* Styles pour le formulaire de filtrage */
+.filter-form {
+    margin-bottom: 20px; /* Espacement inférieur du formulaire de filtrage */
+    display: flex; /* Utilisation du modèle de mise en page flexbox */
+    justify-content: center; /* Alignement des éléments du formulaire au centre */
+    gap: 10px; /* Espacement entre les éléments du formulaire */
+}
+
+.filter-input {
+    padding: 10px; /* Espacement intérieur des champs de filtrage */
+    font-size: 16px; /* Taille de la police dans les champs de filtrage */
+    border: 1px solid #ccc; /* Bordure des champs de filtrage */
+    border-radius: 4px; /* Coins arrondis des champs de filtrage */
+    width: 200px; /* Largeur des champs de filtrage */
+}
+
+.filter-btn {
+    background-color: #28a745; /* Couleur de fond du bouton de filtrage */
+    color: #fff; /* Couleur du texte du bouton de filtrage */
+    padding: 10px 20px; /* Espacement intérieur du bouton de filtrage */
+    border: none; /* Suppression de la bordure du bouton */
+    border-radius: 4px; /* Coins arrondis du bouton */
+    cursor: pointer; /* Curseur pointeur sur le bouton */
+    margin-left: 10px; /* Espacement à gauche du bouton de filtrage */
+}
+
+.filter-btn:hover {
+    background-color: #218838; /* Couleur de fond au survol du bouton de filtrage */
+}
+
+/* Styles pour l'affichage des menus */
+.menus-container {
+    display: flex; /* Utilisation du modèle de mise en page flexbox */
+    flex-wrap: wrap; /* Permet aux éléments de se repositionner sur plusieurs lignes */
+    gap: 20px; /* Espacement entre les éléments des menus */
+    justify-content: center; /* Alignement des éléments des menus au centre */
 }
 
 .menu-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 5px;
+    background-color: #fff; /* Couleur de fond des éléments de menu */
+    border: 1px solid #ddd; /* Bordure des éléments de menu */
+    padding: 15px; /* Espacement intérieur des éléments de menu */
+    border-radius: 8px; /* Coins arrondis des éléments de menu */
+    max-width: 300px; /* Largeur maximale des éléments de menu */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée des éléments de menu */
+    text-align: center; /* Alignement du texte au centre des éléments de menu */
 }
 
 .menu-image {
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
-    margin-right: 1rem;
-}
-
-.menu-details {
-    flex: 1;
+    max-width: 100%; /* Largeur maximale de l'image du menu */
+    border-radius: 8px; /* Coins arrondis de l'image du menu */
 }
 
 .menu-details h2 {
-    margin: 0;
-    font-size: 1.5rem;
+    margin: 15px 0 5px; /* Marges autour du titre du menu */
+    color: #333; /* Couleur du texte du titre du menu */
 }
 
 .menu-details p {
-    margin: 0.5rem 0;
+    margin: 5px 0; /* Marges autour des paragraphes dans les détails du menu */
+    color: #555; /* Couleur du texte des paragraphes dans les détails du menu */
 }
 
-button.active {
-    background-color: #007BFF;
-    color: #fff;
+/* Bouton commander */
+.commander-btn {
+    background-color: #007bff; /* Couleur de fond du bouton commander */
+    color: white; /* Couleur du texte du bouton commander */
+    padding: 10px 15px; /* Espacement intérieur du bouton commander */
+    text-decoration: none; /* Suppression du soulignement du texte du bouton */
+    border-radius: 5px; /* Coins arrondis du bouton commander */
+    display: inline-block; /* Affichage en bloc en ligne du bouton commander */
+    margin-top: 10px; /* Espacement supérieur du bouton commander */
+}
+
+.commander-btn:hover {
+    background-color: #0056b3; /* Couleur de fond au survol du bouton commander */
+}
+
+/* Styles de pagination */
+.pagination {
+    display: flex; /* Utilisation du modèle de mise en page flexbox */
+    justify-content: center; /* Alignement des boutons de pagination au centre */
+    margin-top: 20px; /* Espacement supérieur des boutons de pagination */
+}
+
+.pagination button {
+    background-color: #f4f4f4; /* Couleur de fond des boutons de pagination */
+    border: 1px solid #ddd; /* Bordure des boutons de pagination */
+    padding: 10px 15px; /* Espacement intérieur des boutons de pagination */
+    cursor: pointer; /* Curseur pointeur sur les boutons de pagination */
+    margin: 0 5px; /* Espacement horizontal entre les boutons de pagination */
+    border-radius: 5px; /* Coins arrondis des boutons de pagination */
+}
+
+.pagination button.active {
+    background-color: #007bff; /* Couleur de fond des boutons de pagination actifs */
+    color: white; /* Couleur du texte des boutons de pagination actifs */
 }

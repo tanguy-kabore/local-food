@@ -1,97 +1,105 @@
-/* styles.css */
-
-/* Réinitialiser les marges et les espacements par défaut */
+/* Réinitialiser les marges et les espacements par défaut pour tous les éléments */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Assure que le padding et la bordure sont inclus dans la taille totale des éléments */
 }
 
-/* Style global du corps */
+/* Style global du corps de la page */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif; /* Police par défaut pour la page */
+    background-color: #f4f4f4; /* Couleur de fond gris clair */
+    color: #333; /* Couleur du texte par défaut (gris foncé) */
 }
 
-/* Style de l'en-tête */
+/* Style de l'en-tête (header) */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #333; /* Fond sombre pour l'en-tête */
+    color: #fff; /* Texte en blanc */
+    padding: 10px 0; /* Ajoute un espacement vertical autour de l'en-tête */
 }
 
+/* Styles pour le menu de navigation */
 header nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    justify-content: center; /* Centrer les éléments du menu */
+    list-style-type: none; /* Supprimer les puces de la liste */
 }
 
+/* Style des éléments de liste dans le menu */
 header nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Ajoute un espacement horizontal entre les éléments du menu */
 }
 
+/* Style des liens dans le menu */
 header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+    color: #fff; /* Couleur du texte des liens en blanc */
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    font-weight: bold; /* Met en gras le texte des liens */
 }
 
+/* Effet au survol des liens du menu */
 header nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Ajoute un soulignement lors du survol des liens */
 }
 
-/* Style principal */
+/* Style de la section principale (main) */
 main {
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Limite la largeur maximale à 500px */
+    margin: 50px auto; /* Centre l'élément horizontalement et ajoute un espace vertical */
+    padding: 20px; /* Ajoute un espacement intérieur */
+    background-color: #fff; /* Fond blanc pour la section */
+    border-radius: 8px; /* Arrondit les coins */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère autour du bloc */
 }
 
+/* Style des titres principaux (h1) */
 main h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
+    margin-bottom: 20px; /* Espacement en dessous du titre */
+    font-size: 24px; /* Taille de la police du titre */
+    color: #333; /* Couleur du titre (gris foncé) */
 }
 
+/* Style du formulaire */
 form {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Dispose les éléments du formulaire verticalement */
 }
 
+/* Style des labels du formulaire */
 form label {
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: 5px; /* Espacement sous les labels */
+    font-weight: bold; /* Labels en gras */
 }
 
+/* Style des champs de saisie (texte et mot de passe) */
 form input[type="text"],
 form input[type="password"] {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    margin-bottom: 15px; /* Espacement en dessous des champs */
+    padding: 10px; /* Espacement intérieur des champs */
+    border: 1px solid #ddd; /* Bordure grise claire autour des champs */
+    border-radius: 4px; /* Coins légèrement arrondis */
 }
 
+/* Style du bouton de soumission */
 form button {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #333;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 10px; /* Espacement intérieur du bouton */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 4px; /* Coins arrondis du bouton */
+    background-color: #333; /* Couleur de fond sombre pour le bouton */
+    color: #fff; /* Couleur du texte du bouton en blanc */
+    font-size: 16px; /* Taille de la police du bouton */
+    cursor: pointer; /* Change le curseur au survol */
 }
 
+/* Effet au survol du bouton */
 form button:hover {
-    background-color: #555;
+    background-color: #555; /* Change la couleur de fond lors du survol */
 }
 
-/* Style du message d'erreur ou de succès */
+/* Style pour afficher les messages d'erreur ou de succès */
 #message {
-    margin-top: 10px;
-    color: red;
-    font-weight: bold;
+    margin-top: 10px; /* Ajoute un espace au-dessus du message */
+    color: red; /* Couleur rouge pour les messages d'erreur */
+    font-weight: bold; /* Texte en gras pour plus de visibilité */
 }
